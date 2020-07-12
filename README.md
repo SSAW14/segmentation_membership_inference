@@ -1,7 +1,7 @@
 # Segmentations-Leak: Membership Inference Attacks and Defenses in Semantic Segmentation [ECCV2020]
 by Yang He, Shadi Rahimian, Bernt Schiele and Mario Fritz.
 
-# Citation
+## Citation
 
 If our work is useful for your research, please consider citing:
 
