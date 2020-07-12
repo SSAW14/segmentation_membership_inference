@@ -1,14 +1,17 @@
-# segmentation_membership_inference
+# Segmentations-Leak: Membership Inference Attacks and Defenses in Semantic Segmentation
+by Yang He, Shadi Rahimian, Bernt Schiele and Mario Fritz.
 
-If our work is helpful for your research, please consider citing:
+# Citation
 
-@inproceedings{he2020segmentations_leak,
+If our work is useful for your research, please consider citing:
 
-  title={Segmentations-Leak: Membership Inference Attacks and Defenses in Semantic Image Segmentation},
-  
-  author={He, Yang and Rahimian, Shadi and Schiele, Bernt and Fritz, Mario},
-  
-  booktitle={ECCV},
-  
-  year={2020}
-}
+    @inproceedings{he2020segmentations_leak,
+      title={Segmentations-Leak: Membership Inference Attacks and Defenses in Semantic Image Segmentation},
+      author={He, Yang and Rahimian, Shadi and Schiele, Bernt and Fritz, Mario},
+      booktitle={ECCV},
+      year={2020}
+    }
+
+## Questions
+
+Please contact 'yang.he@cispa.saarland' or 'yang@mpi-inf.mpg.de'
