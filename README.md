@@ -1,5 +1,5 @@
-# Segmentations-Leak: Membership Inference Attacks and Defenses in Semantic Image Segmentation [ECCV2020]
-by Yang He, Shadi Rahimian, Bernt Schiele and Mario Fritz.
+# Segmentations-Leak: Membership Inference Attacks and Defenses in Semantic Image Segmentation
+by Yang He, Shadi Rahimian, Bernt Schiele and Mario Fritz, ECCV2020.
 
 ## Citation
 
