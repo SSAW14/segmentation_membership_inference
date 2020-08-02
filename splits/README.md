@@ -1,3 +1,5 @@
+# Segmentations-Leak: Membership Inference Attacks and Defenses in Semantic Image Segmentation
+
 This folder contains the data splits used in our experiments.
 
 The data splits are partitioned into two parts: dependent and independent.
