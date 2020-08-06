@@ -4,7 +4,8 @@ by Yang He, Shadi Rahimian, Bernt Schiele and Mario Fritz, ECCV2020 (https://arx
 **Note**: The current software is tested with PyTorch 0.4.1.
 
 ## Example
-### Download the example data and model weights from https://drive.google.com/drive/folders/1A4WBp5qxS8rn_EnbCY7H5VArtsErS8pv and run
+### Download
+We provide example data and model weights from https://drive.google.com/drive/folders/1A4WBp5qxS8rn_EnbCY7H5VArtsErS8pv. Download the required files and run
 ```bash
 unzip examples.zip && weights.zip
 ```
