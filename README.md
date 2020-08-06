@@ -4,7 +4,7 @@ by Yang He, Shadi Rahimian, Bernt Schiele and Mario Fritz, ECCV2020 (https://arx
 ## Demo
 ### Download the example data and model weights from https://drive.google.com/drive/folders/1A4WBp5qxS8rn_EnbCY7H5VArtsErS8pv and run
 ```bash
-unzip examples.zip and weights.zip
+unzip examples.zip && weights.zip
 ```
 ### Attack
 In this demo, we attack an UperNet trained on Cityscapes training set with 2975 images. Our trained model with SGD or differential private SGD (DPSGD) can be found in 
