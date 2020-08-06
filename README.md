@@ -1,14 +1,50 @@
 # Segmentations-Leak: Membership Inference Attacks and Defenses in Semantic Image Segmentation
-by Yang He, Shadi Rahimian, Bernt Schiele and Mario Fritz, ECCV2020.
+by Yang He, Shadi Rahimian, Bernt Schiele and Mario Fritz, ECCV2020 (https://arxiv.org/abs/1912.09685).
 
 # Demo
-1. Download the example data and model weights from https://drive.google.com/drive/folders/1A4WBp5qxS8rn_EnbCY7H5VArtsErS8pv. After download the required files, run
+1. Download the example data and model weights from https://drive.google.com/drive/folders/1A4WBp5qxS8rn_EnbCY7H5VArtsErS8pv and run
 ```bash
 unzip examples.zip and weights.zip
 ```
+2. Attack
+In this demo, we attack an UperNet trained on Cityscapes training set with 2975 images. Our trained model with SGD or differential private SGD (DPSGD) can be found in 
+https://drive.google.com/drive/folders/1A4WBp5qxS8rn_EnbCY7H5VArtsErS8pv.
+
+- Attack a model with our structured loss map:
+```bash
+python attack.py -resume ./weights/loss.pth.tar -gpu [GPU_ID]
+```
+- Attack a model with concatenation of GT and predictions:
+```bash
+python attack.py -resume ./weights/concate.pth.tar -input concate -gpu [GPU_ID]
+```
+- Attack a model with different number of patches:
+```bash
+python attack.py -resume ./weights/loss.pth.tar -gpu [GPU_ID] -num-patch [NUM]
+```
+
+3. Defense
+We provide the defenses of Argmax, Gauss and DPSGD in this demo. For DPSGD, we provide the model trained with DPSGD as well as returned posteriors for the faster demo. In the demos below, concatenation is used to show the results, but feel free to change to structured loss map.
+
+- Defense with Argmax:
+```bash
+python attack.py -resume ./weights/concate.pth.tar -input concate -gpu [GPU_ID] -argmax
+```
+
+- Defense with Gauss:
+```bash
+python attack.py -resume ./weights/concate.pth.tar -input concate -gpu [GPU_ID] -gauss [STD_NOISE]
+```
+
+- Defense with DPSGD:
+```bash
+python attack.py -resume ./weights/concate.pth.tar -input concate -gpu [GPU_ID] -dpsgd
+```
+
+# Reproducibility
+To reproduce our results, we provide data splits for dependent and independet settings in splits folder. For Mapillary Vistas dataset, we convert the GT labels to Cityscapes label space.
 
 ## Citation
-
 If our work is useful for your research, please consider citing:
 
     @inproceedings{he2020segmentations_leak,
