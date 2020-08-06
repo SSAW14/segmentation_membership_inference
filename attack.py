@@ -137,7 +137,7 @@ def test(model, data_dir, membership, pred_dir, args):
         name = file.split('.')[0]
         #image = np.array(Image.open('%s/%s.png'%(image_dir, name)))
         label = np.array(Image.open('%s/%s.png'%(label_dir, name)))
-        segment = np.load('%s/%s_%s.npy'%(pred_dir, name, membership ))
+        segment = np.load('%s/%s.npy'%(pred_dir, name))
 
         if args.gauss > 0:
             gaussian_noise = np.random.normal(0, args.gauss, segment.shape)
