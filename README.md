@@ -6,6 +6,7 @@ by Yang He, Shadi Rahimian, Bernt Schiele and Mario Fritz, ECCV2020 (https://arx
 ## Example
 ### Download
 We provide example data and model weights at https://drive.google.com/drive/folders/1A4WBp5qxS8rn_EnbCY7H5VArtsErS8pv.
+
 Download the required files and run
 ```bash
 unzip examples.zip && weights.zip
