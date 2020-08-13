@@ -1,7 +1,7 @@
 # Segmentations-Leak: Membership Inference Attacks and Defenses in Semantic Image Segmentation
 by Yang He, Shadi Rahimian, Bernt Schiele and Mario Fritz, ECCV2020 (https://arxiv.org/abs/1912.09685).
 
-**Note**: The current software is tested with PyTorch 0.4.1.
+**Note**: The current software is tested with PyTorch 0.4.1 and Python 3.6.
 
 ## Example
 ### Download
