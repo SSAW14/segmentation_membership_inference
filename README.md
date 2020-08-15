@@ -61,4 +61,4 @@ If our work is useful for your research, please consider citing:
 
 ## Questions
 
-Please contact 'yang.he@cispa.saarland' or 'yang@mpi-inf.mpg.de'
+Please contact 'yang.he@cispa.saarland'.
